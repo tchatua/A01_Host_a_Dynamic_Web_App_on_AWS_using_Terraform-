@@ -1,0 +1,5 @@
+git.sh
+s02_personel_note.md 
+Terraform_CODE/.terraform/
+Terraform_CODE/.terraform.lock.hcl
+outputs.tf
