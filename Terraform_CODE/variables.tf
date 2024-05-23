@@ -40,3 +40,15 @@ variable "cidr_block_private_data_subnet_az1" {}
 
 # private_data_subnet_az1
 variable "cidr_block_private_data_subnet_az2" {}
+
+# NAT Gateway
+variable "domain" {}
+
+# private_route_table_az1
+variable "cidr_block_private_route_table_az1" {}
+
+# private_route_table_az2
+variable "cidr_block_private_route_table_az2" {}
+
+
+

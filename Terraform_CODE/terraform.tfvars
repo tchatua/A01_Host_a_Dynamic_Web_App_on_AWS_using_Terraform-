@@ -41,3 +41,13 @@ cidr_block_private_data_subnet_az1 = "192.168.50.0/24"
 # private_data_subnet_az1
 cidr_block_private_data_subnet_az2 = "192.168.60.0/24"
 
+# NAT Gateway
+domain = "vpc"
+
+# private_route_table_az1
+cidr_block_private_route_table_az1 = "0.0.0.0/0"
+
+# private_route_table_az2
+cidr_block_private_route_table_az2 = "0.0.0.0/0"
+
+
