@@ -50,4 +50,33 @@ cidr_block_private_route_table_az1 = "0.0.0.0/0"
 # private_route_table_az2
 cidr_block_private_route_table_az2 = "0.0.0.0/0"
 
+# alb_security_group
+description_alb_security_group = "enable http/https access on port 80/443"
+# ingress http access
+description_ingress_http_access = "http access"
+http_port                       = 80
+tcp_protocol                    = "tcp"
+anywhere                        = "0.0.0.0/0"
+# ingress https access
+description_ingress_https_access = "https access"
+https_port                       = 443
+# egress alb sg
+zero      = 0
+minus_one = -1
+
+# ssh_security_group
+description_ssh_security_group = "Enable ssh access on port 22"
+# ingress
+description_ingress_ssh_access = "ssh access"
+ssh_port                       = 22
+my_ip_address                  = "108.24.142.74/32"
+
+# webserver_security_group
+description_webserver_security_group = "enable http/https access on port 80/443 through ALB SG"
+
+# database_security_group
+description_database_security_group = "enable mysql/aurora access on port 3306 through the webserver sg"
+description_ingress_database_access = "mysql/aurora access"
+mysql_port                          = "3306"
+
 

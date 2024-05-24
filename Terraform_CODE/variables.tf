@@ -50,5 +50,31 @@ variable "cidr_block_private_route_table_az1" {}
 # private_route_table_az2
 variable "cidr_block_private_route_table_az2" {}
 
+# alb_security_group
+variable "description_alb_security_group" {}
+# ingress http access
+variable "description_ingress_http_access" {}
+variable "http_port" {}
+variable "tcp_protocol" {}
+variable "anywhere" {}
+# ingress https access
+variable "description_ingress_https_access" {}
+variable "https_port" {}
+# egress alb sg
+variable "zero" {}
+variable "minus_one" {}
 
+# ssh_security_group
+variable "description_ssh_security_group" {}
+variable "description_ingress_ssh_access" {}
+variable "ssh_port" {}
+variable "my_ip_address" {}
+
+# webserver_security_group
+variable "description_webserver_security_group" {}
+
+# database_security_group
+variable "description_database_security_group" {}
+variable "description_ingress_database_access" {}
+variable "mysql_port" {}
 
