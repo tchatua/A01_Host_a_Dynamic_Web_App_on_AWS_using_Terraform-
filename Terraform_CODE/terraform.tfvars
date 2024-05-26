@@ -124,3 +124,22 @@ type_alb_https_listener = "forward"
 # aws_sns_topic_subscription
 protocol_sns       = "email"
 operator_email_sns = "tchattua@gmail.com"
+
+# aws_launch_template webserver_launch_template
+ec2_image_id_webserver      = "ami-0d94353f7bad10668"
+ec2_instance_type_webserver = "t2.micro"
+key_name_webserver          = "private-ssh-key"
+description_webserver       = "webserver launch template for ASG"
+enables_monitoring          = true
+
+# aws_autoscaling_group auto_scaling_group for webserver
+max_size_webserver_asg          = 4
+min_size_webserver_asg          = 2
+health_check_type_webserver_asg = "ELB"
+desired_capacity_webserver_asg  = 2
+version_launch_template         = "$Latest"
+# tag
+key_tag                 = "Name"
+value_tag               = "asg-webserver"
+propagate_at_launch_tag = true
+

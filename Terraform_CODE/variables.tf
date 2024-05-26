@@ -123,8 +123,23 @@ variable "type_alb_https_listener" {}
 variable "protocol_sns" {}
 variable "operator_email_sns" {}
 
+# aws_launch_template webserver_launch_template
+variable "ec2_image_id_webserver" {}
+variable "ec2_instance_type_webserver" {}
+variable "key_name_webserver" {}
+variable "description_webserver" {}
+variable "enables_monitoring" {}
 
-
+# aws_autoscaling_group auto_scaling_group for webserver
+variable "max_size_webserver_asg" {}
+variable "min_size_webserver_asg" {}
+variable "health_check_type_webserver_asg" {}
+variable "desired_capacity_webserver_asg" {}
+variable "version_launch_template" {}
+# tag
+variable "key_tag" {}
+variable "value_tag" {}
+variable "propagate_at_launch_tag" {}
 
 
 
