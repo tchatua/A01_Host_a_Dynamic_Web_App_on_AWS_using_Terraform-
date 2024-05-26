@@ -3,3 +3,9 @@ s02_personel_note.md
 Terraform_CODE/.terraform/
 Terraform_CODE/.terraform.lock.hcl
 outputs.tf
+# RDS
+Terraform_CODE/rds.md
+Terraform_CODE/rds_launch.md
+launch_rds/*
+V1__shopwise.sql
+migrate-sql-data.sh

@@ -5,7 +5,8 @@ author        = "Arristide Tchatua"
 project       = "DWA: Host a Dynamic Web App on AWS Cloud Platformusing Terraform and EC2"
 managedby     = "Terraform"
 owner         = "Arristide Tchatua"
-administrator = "tchattua@gmail.com, tchatuaa@gmail.com"
+# administrator = "tchattua@gmail.com, tchatuaa@gmail.com"
+administrator = "tchattua@gmail.com"
 
 # Region
 region  = "us-east-1"
@@ -79,4 +80,43 @@ description_database_security_group = "enable mysql/aurora access on port 3306 t
 description_ingress_database_access = "mysql/aurora access"
 mysql_port                          = "3306"
 
+# # RDS
+# # database_subnet_group
+# description_database_subnets_group = "subnets for database instance"
+# # latest_db_snapshot
+# database_snapshot_identifier     = "arn:aws:rds:us-east-1:088354478627:snapshot:fleetcart-final-snapshot"
+# most_recent_latest_db_snapshot   = true
+# snapshot_type_latest_db_snapshot = "manual"
+# # database_instance
+# database_instance_class               = "db.t2.micro"
+# skip_final_snapshot_database_instance = true
+# database_instance_identifier          = "database-1"
+# multi_az_deployment                   = false
 
+# application_load_balancer
+internal_false                   = false
+load_balancer_type               = "application"
+enable_deletion_protection_false = false
+
+# alb_target_group
+target_type                          = "instance"
+http_protocol                        = "HTTP"
+healthy_threshold_alb_target_group   = 5
+matcher_alb_target_group             = "200,301,302"
+path_alb_target_group                = "/"
+port_health_check_alb_target_group   = "traffic-port"
+timeout_alb_target_group             = 5
+unhealthy_threshold_alb_target_group = 2
+
+# alb_http_listener on port 80
+type_alb_http_listener = "redirect"
+# redirect
+host_redirect                          = "#{host}"
+path_redirect                          = "/#{path}"
+https_protocol                         = "HTTPS"
+status_code_redirect_alb_http_listener = "HTTP_301"
+
+# alb_https_listener on port 443
+ssl_policy              = "ELBSecurityPolicy-2016-08"
+ssl_certificate_arn     = "arn:aws:acm:us-east-1:088354478627:certificate/c7ffdb2a-91a1-40fc-b2fb-36cf6f2ab62a"
+type_alb_https_listener = "forward"

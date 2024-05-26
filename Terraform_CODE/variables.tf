@@ -78,3 +78,45 @@ variable "description_database_security_group" {}
 variable "description_ingress_database_access" {}
 variable "mysql_port" {}
 
+# # RDS Variables
+# # database_subnet_group
+# variable "description_database_subnets_group" {}
+# # latest_db_snapshot
+# variable "database_snapshot_identifier" {}
+# variable "most_recent_latest_db_snapshot" {}
+# variable "snapshot_type_latest_db_snapshot" {}
+# # database_instance
+# variable "database_instance_class" {}
+# variable "skip_final_snapshot_database_instance" {}
+# variable "database_instance_identifier" {}
+# variable "multi_az_deployment" {}
+
+# application_load_balancer
+variable "internal_false" {}
+variable "load_balancer_type" {}
+variable "enable_deletion_protection_false" {}
+
+# alb_target_group
+variable "target_type" {}
+variable "http_protocol" {}
+variable "healthy_threshold_alb_target_group" {}
+variable "matcher_alb_target_group" {}
+variable "path_alb_target_group" {}
+variable "port_health_check_alb_target_group" {}
+variable "timeout_alb_target_group" {}
+variable "unhealthy_threshold_alb_target_group" {}
+
+# alb_http_listener on port 80
+variable "type_alb_http_listener" {}
+# redirect
+variable "host_redirect" {}
+variable "path_redirect" {}
+variable "https_protocol" {}
+variable "status_code_redirect_alb_http_listener" {}
+
+# alb_http_listener on port 443
+variable "ssl_policy" {}
+variable "ssl_certificate_arn" {}
+variable "type_alb_https_listener" {}
+
+
