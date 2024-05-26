@@ -141,5 +141,14 @@ variable "key_tag" {}
 variable "value_tag" {}
 variable "propagate_at_launch_tag" {}
 
+# data "aws_route53_zone" "hosted_zone" 
+variable "domain_name" {}
+
+# aws_route53_record site_domain
+variable "record_name" {}
+variable "record_type" {}
+variable "evaluate_target_health_record" {}
+
+
 
 

@@ -143,3 +143,10 @@ key_tag                 = "Name"
 value_tag               = "asg-webserver"
 propagate_at_launch_tag = true
 
+# data "aws_route53_zone" "hosted_zone" 
+domain_name = "tchatua.com"
+
+# aws_route53_record site_domain
+record_name                   = "www"
+record_type                   = "A"
+evaluate_target_health_record = true
