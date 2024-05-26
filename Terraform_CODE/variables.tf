@@ -119,4 +119,12 @@ variable "ssl_policy" {}
 variable "ssl_certificate_arn" {}
 variable "type_alb_https_listener" {}
 
+# aws_sns_topic_subscription
+variable "protocol_sns" {}
+variable "operator_email_sns" {}
+
+
+
+
+
 

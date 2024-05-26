@@ -1,10 +1,10 @@
 # General Variables
-name          = "dev-dwa"
-folder        = "a02_2024/d14_AOSNOTE/A01_Host_a_Dynamic_Web_App_on_AWS_using_Terraform-/Terraform_CODE"
-author        = "Arristide Tchatua"
-project       = "DWA: Host a Dynamic Web App on AWS Cloud Platformusing Terraform and EC2"
-managedby     = "Terraform"
-owner         = "Arristide Tchatua"
+name      = "dev-dwa"
+folder    = "a02_2024/d14_AOSNOTE/A01_Host_a_Dynamic_Web_App_on_AWS_using_Terraform-/Terraform_CODE"
+author    = "Arristide Tchatua"
+project   = "DWA: Host a Dynamic Web App on AWS Cloud Platformusing Terraform and EC2"
+managedby = "Terraform"
+owner     = "Arristide Tchatua"
 # administrator = "tchattua@gmail.com, tchatuaa@gmail.com"
 administrator = "tchattua@gmail.com"
 
@@ -120,3 +120,7 @@ status_code_redirect_alb_http_listener = "HTTP_301"
 ssl_policy              = "ELBSecurityPolicy-2016-08"
 ssl_certificate_arn     = "arn:aws:acm:us-east-1:088354478627:certificate/c7ffdb2a-91a1-40fc-b2fb-36cf6f2ab62a"
 type_alb_https_listener = "forward"
+
+# aws_sns_topic_subscription
+protocol_sns       = "email"
+operator_email_sns = "tchattua@gmail.com"
