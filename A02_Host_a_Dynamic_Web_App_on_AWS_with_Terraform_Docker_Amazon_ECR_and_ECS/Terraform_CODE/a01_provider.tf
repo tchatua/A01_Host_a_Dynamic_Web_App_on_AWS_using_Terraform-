@@ -12,6 +12,7 @@ provider "aws" {
       Author        = var.author
       Owner         = var.owner
       Administrator = var.administrator
+      Description = var.description
     }
   }
 }
