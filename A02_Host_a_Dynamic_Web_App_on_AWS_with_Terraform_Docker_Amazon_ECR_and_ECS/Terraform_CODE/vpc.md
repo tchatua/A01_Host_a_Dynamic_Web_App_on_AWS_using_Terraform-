@@ -5,6 +5,7 @@ resource "aws_vpc" "main" {
 
   tags = {
     Name          = "${var.name}-vpc"
+    Environment = var.environment
     Folder        = var.folder
     Author        = var.author
     Project       = var.project
