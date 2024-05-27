@@ -39,3 +39,26 @@ cidr_block_private_data_subnet_az2 = "192.168.60.0/24"
 # elastic IP az1
 domain_eip = "vpc"
 
+# Security Groups Variables
+# Create security group for the application load balancer
+# alb sg
+description_alb_security_group   = "enable http/https access on port 80/443"
+description_ingress_http_access  = "http access"
+description_ingress_https_access = "https access"
+http_port                        = 80
+https_port                       = 443
+tcp_protocol                     = "tcp"
+zero                             = 0
+minus_one                        = -1
+# Create security group for the bastion host aka jumb box
+description_bastion_security_group = "enable http/https access on port 22"
+description_ingress_ssh_access     = "ssh access"
+ssh_port                           = 22
+ssh_location                       = "108.24.142.74/32"
+# Create security group for the app server
+description_app_server_security_group = "enable http/https access on port 80/443 vis alb sg"
+# Create security group for the database
+description_database_security_group        = "enable mysql/aurora access on port 3306 vis app server sg"
+description_ingress_mysql_or_aurora_access = "mysql/aurora access"
+mysql_port                                 = 3306
+description_custom_access                  = "custom access"
