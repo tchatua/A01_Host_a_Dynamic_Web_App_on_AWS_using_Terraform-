@@ -6,3 +6,5 @@ Terraform_CODE/.terraform.lock.hcl
 **/rds.md
 **/rds_launch.md
 **/launch_rds/*
+
+**/a01_vpc.tf

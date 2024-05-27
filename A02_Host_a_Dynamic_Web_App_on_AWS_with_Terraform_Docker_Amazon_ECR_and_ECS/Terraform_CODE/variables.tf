@@ -1,3 +1,6 @@
+# main
+variable "region" {}
+
 # General Variables
 variable "name" {}
 variable "folder" {}
