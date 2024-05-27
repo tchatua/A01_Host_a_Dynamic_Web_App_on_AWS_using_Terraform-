@@ -34,3 +34,6 @@ variable "cidr_block_private_data_subnet_az1" {}
 # create private data subnet az2
 variable "cidr_block_private_data_subnet_az2" {}
 
+# elastic IP az1
+variable "domain_eip" {}
+
