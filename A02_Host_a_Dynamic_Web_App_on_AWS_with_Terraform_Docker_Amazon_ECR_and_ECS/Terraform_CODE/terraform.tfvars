@@ -62,3 +62,17 @@ description_database_security_group        = "enable mysql/aurora access on port
 description_ingress_mysql_or_aurora_access = "mysql/aurora access"
 mysql_port                                 = 3306
 description_custom_access                  = "custom access"
+
+# Create RDS Database from the available snapshot
+# Create database subnet group
+description_database_subnet_group = "Subnets for database instances"
+# Get information about a database snapshot 
+db_snapshot_identifier_database_snapshot = ""
+most_recent_database_snapshot            = true
+snapshot_type_database_snapshot          = "manual"
+
+# Launch an rds instance from a database snapshot
+database_instance_class       = "db.t2.micro"
+snapshot_of_database_instance = "dwa-ecs-dev-final-snapshot"
+database_instance_identifier  = "dwa-dev-rds-db"
+multi_az_deployment           = "false"

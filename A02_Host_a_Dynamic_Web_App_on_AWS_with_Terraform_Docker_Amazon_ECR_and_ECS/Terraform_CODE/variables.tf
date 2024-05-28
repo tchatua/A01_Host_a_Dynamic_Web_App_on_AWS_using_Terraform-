@@ -60,6 +60,15 @@ variable "description_ingress_mysql_or_aurora_access" {}
 variable "mysql_port" {}
 variable "description_custom_access" {}
 
-
-
-
+# Create RDS Database from the available snapshot
+# Create database subnet group
+variable "description_database_subnet_group" {}
+# Get information about a database snapshot
+variable "db_snapshot_identifier_database_snapshot" {}
+variable "most_recent_database_snapshot" {}
+variable "snapshot_type_database_snapshot" {}
+# Launch an rds instance from a database snapshot
+variable "database_instance_class" {}
+variable "snapshot_of_database_instance" {}
+variable "database_instance_identifier" {}
+variable "multi_az_deployment" {}
